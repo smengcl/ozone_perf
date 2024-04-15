@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # configure these
-DOMAIN=weichiu
-CM_HOST=${DOMAIN}-1.${DOMAIN}.root.hwx.site
+DOMAIN=smeng
+CM_HOST=ccycloud-1.${DOMAIN}.root.comops.site
 export CM_PORT=7180
 PASSWORDLESS_USER="systest"
 # choose between http or https
 export CM_HTTP=http
-export OZONE_SERVICE_ID="ozone1"
-KERBEROS=true
-scale=( 100  )
+export OZONE_SERVICE_ID="ozone1712775527"
+KERBEROS=false
+scale=( 100 )
 
 # FILE_SYSTEM is ozone or hdfs
 export FILE_SYSTEM="ozone" 
@@ -42,8 +42,8 @@ SCRIPT_ROOT=`dirname "$0"`
 HOST_FILE="cluster_hosts.txt"
 IMPALAD_HOST_FILE="cluster_hosts_impalad.txt"
 REGIONSERVER_HOST_FILE="cluster_hosts_regionserver.txt"
-ASYNC_PROFILER_TARBALL="async-profiler-2.8.1-linux-x64.tar.gz"
-ASYNC_PROFILER_DOWNLOAD_PATH="https://github.com/jvm-profiling-tools/async-profiler/releases/download/v2.8.1/$ASYNC_PROFILER_TARBALL"
+ASYNC_PROFILER_TARBALL="async-profiler-3.0-linux-x64.tar.gz"
+ASYNC_PROFILER_DOWNLOAD_PATH="https://github.com/jvm-profiling-tools/async-profiler/releases/download/v3.0/$ASYNC_PROFILER_TARBALL"
 JAVA_HOME=`echo $JAVA_HOME_FINDER`
 MVN_VERSION="3.8.6"
 export PATH=$PATH:$JAVA_HOME/bin/
